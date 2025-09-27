@@ -1,0 +1,49 @@
+:root {
+  --color-primario: #0d6efd;
+  --color-primario-dark: #0b5ed7;
+  --color-fondo: #f7f9fc;
+}
+
+body {
+  background-color: var(--color-fondo);
+}
+
+.navbar-brand {
+  font-weight: 600;
+}
+
+.card.app-card {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s ease;
+}
+
+.card.app-card:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+input.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.btn-primary {
+  background-color: var(--color-primario);
+  border-color: var(--color-primario);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primario-dark);
+  border-color: var(--color-primario-dark);
+}
+
+.table thead th {
+  white-space: nowrap;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.oculto {
+  display: none !important;
+}
