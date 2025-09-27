@@ -1,0 +1,33 @@
+        body {
+            background-color: #f8f9fa;
+        }
+        .profile-card {
+            margin-top: 50px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .profile-header {
+            background-color: #0d6efd;
+            color: white;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .form-control:read-only {
+            background-color: #e9ecef;
+            cursor: not-allowed;
+        }
+        .btn-group {
+            gap: 10px;
+        }
+
+
+    #alert-container {
+      position: fixed;
+      top: 200px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: auto;
+      max-width: 600px;
+      z-index: 1055;
+    }
+  

@@ -1,0 +1,70 @@
+/* Estilos base de la otra plantilla */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-card {
+    margin-top: 20px; /* Ajustado para que no esté tan abajo */
+    border-radius: 15px;
+    box-shadow: 0 4px_12px rgba(0,0,0,0.1);
+    border: none;
+}
+
+.profile-header {
+    background-color: #0d6efd;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.form-control:read-only {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}
+
+.btn-group {
+    gap: 10px;
+}
+
+#alert-container {
+    position: fixed;
+    top: 90px; /* Subido para que no estorbe */
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    max-width: 600px;
+    z-index: 1055;
+}
+
+/* --- Nuevos estilos para la plantilla de turnos --- */
+
+/* Contenedor de filtros */
+.filters-container {
+    background-color: #eef3ff;
+    border-radius: 8px;
+    border: 1px solid #dbe5ff;
+}
+
+/* Estilo de pestañas */
+.nav-tabs .nav-link {
+    color: #495057;
+}
+
+.nav-tabs .nav-link.active {
+    color: #0d6efd;
+    border-color: #dee2e6 #dee2e6 #fff;
+    font-weight: 500;
+}
+
+/* Insignias de estado */
+.badge {
+    font-size: 0.8rem;
+    padding: 0.5em 0.7em;
+}
+
+/* Modales */
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
