@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./estilo.css">
+
+
+    <link rel="icon" href="./img/iconocartillasalud.png" type="image/png">
+    <title>Gestion de usuarios</title>
+
+</head>
+<body class="bg-light">
+
+    <div class="container">
+
+    <!-- NAVBAR PANTALLA PRINCIPAL ADMIN -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Administrador</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Mostrar navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+           
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+         
+            <div class="d-flex gap-2">
+                <span id="etiquetaUsuario" class="text-white-50 small me-3"></span>
+
+                <a href="./principalAdmin.html">
+                    <button id="btnAlInicio" class="btn btn-outline-light btn-sm">Al inicio</button>    
+                </a>
+                
+                <a href="./perfilAdmin.html">
+                    <button id="btnVerPerfil" class="btn btn-outline-light btn-sm">Ver perfíl</button>
+                </a>
+                
+                <button id="btnCerrarSesion" class="btn btn-outline-light btn-sm">Cerrar sesión</button>
+            
+            </div>
+        </div>
+        </div>
+    </nav>
+
+
+    <!-- CUERPO DEL PANEL ADMINISTRADOR -->
+
+    <main class="my-5">
+    <div class="d-flex align-items-center justify-content-between mb-4">
+      <h1 class="h1 mb-0">Gestion de usuarios</h1>
+    </div>
+
+
+    
+    
+  <div class="d-flex align-items-center justify-content-between mb-4">
+          <h1 class="h4 mb-0">Administradores</h1>
+        </div>
+
+        <div class="container text-center">
+        <div class="row align-items-center gap-2 col-12 mx-auto">
+            <div class="col">
+                <button class="btn btn-outline-primary btn-md" >Agregar</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-outline-primary btn-md" >Modificar</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-outline-primary btn-md" >Eliminar</button>
+            </div>
+
+
+             <div class="container-fluid">
+            <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar administrador" aria-label="Buscar administrador"/>
+            <button class="btn btn-outline-primary btn-md" type="submit">Buscar</button>
+            </form>
+            </div>
+        </div>
+        </div>
+
+        <br>
+
+<div class="table-responsive">
+        <table class="table  text-center  table-hover">
+        <thead class="table-primary">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre completo</th>
+            <th scope="col">DNI</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Emilio Balcaza</td>
+            <td scope="row">34.000.001</td>
+            <td scope="row">1523232323</td>
+            <td scope="row">EmiBalcaz@gmail.com</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Juan Perez</td>
+            <td>34.000.002</td>
+            <td>1523232325</td>
+            <td>juanPerez@gmail.com</td>
+          
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Norma Laje</td>
+            <td>34.100.021</td>
+            <td>1525452323</td>
+            <td>nLaje@gmail.com</td>
+           
+        </tr>
+        <tr>
+             <th scope="row">4</th>
+            <td>Ricardo Iorio</td>
+            <td>24.124.201</td>
+            <td>1523235544</td>
+            <td>riorio@gmail.com</td>
+           
+        </tr>
+        </tbody>
+        </table>
+</div>
+
+<br>
+        
+       <div class="d-flex align-items-center justify-content-between mb-4">
+          <h1 class="h4 mb-0">Personal de salud</h1>
+        </div>
+
+        <div class="container text-center">
+        <div class="row align-items-center gap-2 col-12 mx-auto">
+            <div class="col">
+                <button class="btn btn-outline-primary btn-md" >Agregar</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-outline-primary btn-md" >Modificar</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-outline-primary btn-md" >Eliminar</button>
+            </div>
+
+            <div class="container-fluid">
+            <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar personal de salud" aria-label="Buscar personal de salud"/>
+            <button class="btn btn-outline-primary btn-md" type="submit">Buscar</button>
+            </form>
+            </div>
+        </div>
+        </div>
+
+   <br>
+
+<div class="table-responsive">
+        <table class="table  text-center  table-hover">
+        <thead class="table-primary">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre completo</th>
+            <th scope="col">Especialidad</th>
+            <th scope="col">DNI</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Email</th>
+            
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Elena Perez</td>
+            <td>Clínica</td>
+            <td>36.000.000</td>
+            <td>1545455656</td>
+            <td>elena@gmail.com</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Maria Garcia</td>
+            <td>Pediatría</td>
+            <td>21.000.000</td>
+            <td>1545781232</td>
+            <td>mariagarcia@hotmail.com</td>
+          
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Juan Garcia</td>
+            <td>Traumatologia</td>
+            <td>21.204.500</td>
+            <td>1545626232</td>
+            <td>jmgarcia@hotmail.com</td>
+           
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+              <td>Juan Perez</td>
+            <td>Cardiologia</td>
+            <td>41.244.500</td>
+            <td>1546526233</td>
+            <td>jperez@hotmail.com</td>
+           
+        </tr>
+        </tbody>
+        </table>
+</div>
+
+        <br>
+
+
+
+  <div class="d-flex align-items-center justify-content-between mb-4">
+          <h1 class="h4 mb-0">Pacientes</h1>
+        </div>
+
+        <div class="container text-center">
+        <div class="row align-items-center gap-2 col-12 mx-auto">
+            <div class="col">
+                <button class="btn btn-outline-primary btn-md" >Agregar</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-outline-primary btn-md" >Modificar</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-outline-primary btn-md" >Eliminar</button>
+            </div>
+
+
+             <div class="container-fluid">
+            <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar paciente" aria-label="Buscar paciente"/>
+            <button class="btn btn-outline-primary btn-md" type="submit">Buscar</button>
+            </form>
+            </div>
+        </div>
+        </div>
+
+        <br>
+
+<div class="table-responsive">
+        <table class="table  text-center  table-hover">
+        <thead class="table-primary">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre completo</th>
+            <th scope="col">DNI</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Emilio Balcaza</td>
+            <td scope="row">34.000.001</td>
+            <td scope="row">1523232323</td>
+            <td scope="row">EmiBalcaz@gmail.com</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Juan Perez</td>
+            <td>34.000.002</td>
+            <td>1523232325</td>
+            <td>juanPerez@gmail.com</td>
+          
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Norma Laje</td>
+            <td>34.100.021</td>
+            <td>1525452323</td>
+            <td>nLaje@gmail.com</td>
+           
+        </tr>
+        <tr>
+             <th scope="row">4</th>
+            <td>Ricardo Iorio</td>
+            <td>24.124.201</td>
+            <td>1523235544</td>
+            <td>riorio@gmail.com</td>
+           
+        </tr>
+        </tbody>
+        </table>
+</div>
+
+
+
+
+
+
+
+    </main>
+</div>
+
+</body>
+
+<footer class="text-center text-muted small my-4">
+  © 2025 Sistema de Gestión de turnos - Perfil administrador
+  </footer>
+  
+</html>
