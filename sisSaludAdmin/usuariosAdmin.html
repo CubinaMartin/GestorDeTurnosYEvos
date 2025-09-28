@@ -31,11 +31,10 @@
            
             <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
          
-            <div class="d-flex">
-            
-                <button id="btnVerPerfil" class="btn btn-outline-light btn-sm">Ver perfíl</button>
-              
+            <div class="d-flex gap-2">
                 <span id="etiquetaUsuario" class="text-white-50 small me-3"></span>
+                <button id="btnAlInicio" class="btn btn-outline-light btn-sm">Al inicio</button>
+                <button id="btnVerPerfil" class="btn btn-outline-light btn-sm">Ver perfíl</button>
                 <button id="btnCerrarSesion" class="btn btn-outline-light btn-sm">Cerrar sesión</button>
             
             </div>
@@ -48,12 +47,88 @@
 
     <main class="my-5">
     <div class="d-flex align-items-center justify-content-between mb-4">
-      <h1 class="h4 mb-0">Gestion de usuarios</h1>
+      <h1 class="h1 mb-0">Gestion de usuarios</h1>
     </div>
 
 
-      
+    
+    
+  <div class="d-flex align-items-center justify-content-between mb-4">
+          <h1 class="h4 mb-0">Administradores</h1>
+        </div>
 
+        <div class="container text-center">
+        <div class="row align-items-center gap-2 col-12 mx-auto">
+            <div class="col">
+                <button class="btn btn-outline-primary btn-md" >Agregar</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-outline-primary btn-md" >Modificar</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-outline-primary btn-md" >Eliminar</button>
+            </div>
+
+
+             <div class="container-fluid">
+            <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar administrador" aria-label="Buscar administrador"/>
+            <button class="btn btn-outline-primary btn-md" type="submit">Buscar</button>
+            </form>
+            </div>
+        </div>
+        </div>
+
+        <br>
+
+<div class="table-responsive">
+        <table class="table  text-center  table-hover">
+        <thead class="table-primary">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre completo</th>
+            <th scope="col">DNI</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Emilio Balcaza</td>
+            <td scope="row">34.000.001</td>
+            <td scope="row">1523232323</td>
+            <td scope="row">EmiBalcaz@gmail.com</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Juan Perez</td>
+            <td>34.000.002</td>
+            <td>1523232325</td>
+            <td>juanPerez@gmail.com</td>
+          
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Norma Laje</td>
+            <td>34.100.021</td>
+            <td>1525452323</td>
+            <td>nLaje@gmail.com</td>
+           
+        </tr>
+        <tr>
+             <th scope="row">4</th>
+            <td>Ricardo Iorio</td>
+            <td>24.124.201</td>
+            <td>1523235544</td>
+            <td>riorio@gmail.com</td>
+           
+        </tr>
+        </tbody>
+        </table>
+</div>
+
+<br>
         
        <div class="d-flex align-items-center justify-content-between mb-4">
           <h1 class="h4 mb-0">Personal de salud</h1>
@@ -62,19 +137,19 @@
         <div class="container text-center">
         <div class="row align-items-center gap-2 col-12 mx-auto">
             <div class="col">
-                <button class="btn btn-outline-primary btn-sm" >Agregar</button>
+                <button class="btn btn-outline-primary btn-md" >Agregar</button>
             </div>
             <div class="col">
-                <button class="btn btn-outline-primary btn-sm" >Modificar</button>
+                <button class="btn btn-outline-primary btn-md" >Modificar</button>
             </div>
             <div class="col">
-                <button class="btn btn-outline-primary btn-sm" >Eliminar</button>
+                <button class="btn btn-outline-primary btn-md" >Eliminar</button>
             </div>
 
             <div class="container-fluid">
             <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Buscar personal de salud" aria-label="Buscar personal de salud"/>
-            <button class="btn btn-outline-primary" type="submit">Buscar</button>
+            <button class="btn btn-outline-primary btn-md" type="submit">Buscar</button>
             </form>
             </div>
         </div>
@@ -98,7 +173,7 @@
         <tbody>
         <tr>
             <th scope="row">1</th>
-            <td>Elena Mendez</td>
+            <td>Elena Perez</td>
             <td>Clínica</td>
             <td>36.000.000</td>
             <td>1545455656</td>
@@ -146,20 +221,20 @@
         <div class="container text-center">
         <div class="row align-items-center gap-2 col-12 mx-auto">
             <div class="col">
-                <button class="btn btn-outline-primary btn-sm" >Agregar</button>
+                <button class="btn btn-outline-primary btn-md" >Agregar</button>
             </div>
             <div class="col">
-                <button class="btn btn-outline-primary btn-sm" >Modificar</button>
+                <button class="btn btn-outline-primary btn-md" >Modificar</button>
             </div>
             <div class="col">
-                <button class="btn btn-outline-primary btn-sm" >Eliminar</button>
+                <button class="btn btn-outline-primary btn-md" >Eliminar</button>
             </div>
 
 
              <div class="container-fluid">
             <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Buscar paciente" aria-label="Buscar paciente"/>
-            <button class="btn btn-outline-primary" type="submit">Buscar</button>
+            <button class="btn btn-outline-primary btn-md" type="submit">Buscar</button>
             </form>
             </div>
         </div>
@@ -217,8 +292,16 @@
 
 
 
+
+
+
     </main>
 </div>
 
 </body>
+
+<footer class="text-center text-muted small my-4">
+  © 2025 Sistema de Gestión de turnos - Perfil administrador
+  </footer>
+  
 </html>

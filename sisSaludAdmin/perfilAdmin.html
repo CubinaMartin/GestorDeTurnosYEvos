@@ -1,0 +1,129 @@
+<!-- En este html el formulario escribimos los values ya iniciados para poder editarlos. Luego se modificara por placeholder para que sea solo ejemplo-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author"  content="Grupo 7" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./estilo.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="./script.js" defer></script>   
+
+ <title>Perfil del administrador</title>
+    <link rel="icon" href="./img/iconocartillasalud.png">
+
+</head>
+<body>
+
+<div class="container">
+
+
+
+    <!-- NAVBAR ADMIN -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Administrador</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Mostrar navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+           
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+         
+            <div class="d-flex gap-2">
+                <span id="etiquetaUsuario" class="text-white-50 small me-3"></span>
+                <button id="btnAlInicio" class="btn btn-outline-light btn-sm">Al inicio</button>
+                <button id="btnCerrarSesion" class="btn btn-outline-light btn-sm">Cerrar sesión</button>
+            
+            </div>
+        </div>
+        </div>
+    </nav>
+
+
+<br>
+    <div>
+        <div class="col-lg-12">
+            
+        <div id="alert-container"></div>
+
+            
+            <div class="card profile-card">
+                <div class="card-header profile-header text-center py-3">
+                    <h2>Mi Perfil</h2>
+                </div>
+                <div class="card-body p-4">
+                    <form id="profileForm">
+                        <h5 class="mb-3">Información Personal</h5>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="nombre" class="form-label">Nombre(s)</label>
+                                <input type="text" class="form-control" id="nombre" value="Juan" readonly>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="apellido" class="form-label">Apellido(s)</label>
+                                <input type="text" class="form-control" id="apellido" value="Pérez" readonly>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="especialidad" class="form-label">Especialidad</label>
+                            <input type="text" class="form-control" id="especialidad" value="Clinico" readonly>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="numeroMatricula" class="form-label">Numero de matrícula</label>
+                            <input type="text" class="form-control" id="numeroMatricula" value="20.356" readonly>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento</label>
+                            <input type="date" class="form-control" id="fechaNacimiento" value="1985-05-20" readonly>
+                        </div>
+                        <div class="mb-4">
+                            <label for="dni" class="form-label">DNI / Documento de Identidad</label>
+                            <input type="text" class="form-control" id="dni" min="1111111" max="999999999" value="12.345.678" readonly>
+                        </div>
+                        
+                        <hr>
+
+                        <h5 class="mb-3 mt-4">Información de Contacto</h5>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" value="juan.perez@email.com" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono" value="+54 9 11 1234-5678" readonly>
+                        </div>
+                         <div class="mb-3">
+                            <label for="direccion" class="form-label">Dirección</label>
+                            <input type="text" class="form-control" id="direccion" value="Av. Siempre Viva 742" readonly>
+                        </div>
+
+
+<div class="d-flex justify-content-end mt-4 btn-group">
+    <button type="button" id="editBtn" class="btn btn-primary">✏️ Editar Perfil</button>
+
+    <button type="submit" class="btn btn-primary d-none" id="saveBtn">💾 Guardar Cambios</button>
+    <button type="button" id="cancelBtn" class="btn btn-secondary d-none">❌ Cancelar</button>
+</div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+<footer class="text-center text-muted small my-4">
+  © 2025 Sistema de Gestión de turnos - Perfil administrador
+  </footer>
+  
+</html>
